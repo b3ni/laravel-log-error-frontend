@@ -1,0 +1,46 @@
+{
+    "name": "brarcos/log-error-frontend",
+    "description": ":description",
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "Benito Rodríguez",
+            "email": "brarcos@gmail.com",
+            "homepage": "https://b3ni.es"
+        }
+    ],
+    "homepage": "https://github.com/b3ni/laravel-log-error-frontend",
+    "keywords": [
+        "Laravel",
+        "LogErrorFrontend"
+    ],
+    "require": {
+        "illuminate/support": "^5.5|^6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brarcos\\LogErrorFrontend\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Brarcos\\LogErrorFrontend\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brarcos\\LogErrorFrontend\\ServiceProvider"
+            ],
+            "aliases": {
+                "LogErrorFrontend": "Brarcos\\LogErrorFrontend\\Facades\\LogErrorFrontend"
+            }
+        }
+    }
+}
